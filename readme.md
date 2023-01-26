@@ -208,15 +208,21 @@ y - y_{1} = \frac{y_{1}-y_{2}}{x_{1}-x_{2}}(x-x_{1})
 ```math
 straight line A -> y - 0 = \frac{0-51}{0-102}(x-0)
 ```
+```math
 straight line B -> y - 51 = \frac{51-204}{102-153}(x-102)
+```
 ```math
 straight line C -> y - 204 = \frac{204-255}{153-255}(x-153)
 ```
 ![plot](./src/constar.jpg)
 ```math
-    straight line A -> $ y=0.5x $
-    straight line B -> $ y=3x-255 $
-    straight line C -> $ y=0.5x+127.5 $
+    straight line A ->  y=0.5x 
+```
+```math
+    straight line B ->  y=3x-255 
+```
+```math
+    straight line C ->  y=0.5x+127.5 
 ```
 instead pixel value in equation
 #### Example 
