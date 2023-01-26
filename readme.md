@@ -226,10 +226,18 @@ straight line C -> y - 204 = \frac{204-255}{153-255}(x-153)
 ```
 instead pixel value in equation
 #### Example 
-26 is in straight line A => ```math
- y = 0.5 -> y=0.5(26) = 23 ```
-144 is in straight line B => $ y = 3x-255-> y=3(144)-255 = 177 $
-254 is in straight line C => $ y = 0.5x+127.5 -> y=0.5(254)-127.5 = 255 $
+26 is in straight line A 
+```math
+ y = 0.5 -> y=0.5(26) = 23 
+```
+144 is in straight line B 
+```math 
+y = 3x-255-> y=3(144)-255 = 177 
+```
+254 is in straight line C 
+```math
+ y = 0.5x+127.5 -> y=0.5(254)-127.5 = 255 
+ ```
 ![plot](./src/constar.jpg)
 ![plot](./src/constarin.jpg)![plot](./src/constaout.jpg)
 
