@@ -252,15 +252,19 @@ out of the picture
   Can be used to eliminate salt and pepper noise.
   #### Example
     ![plot](./src/madenf.jpg)
+
     sort value in red windows and then use position 5 of sort table to map in new table 
     if not have value in space on windows ,you have to just instead by 0
+
     ![plot](./src/sortta.jpg)![plot](./src/newta.jpg)
 - ## Average Filter
     just average every value in spac on red window and then map to naw table
     if not have value in space on windows ,you have to just instead by 0
     #### Example
-    $$ Pixel_{out}=\frac{0+0+0+0+16+8+0+120+25}{9} $$
-    ![plot](./src/avafill.jpg)![plot](./src/avafill2.jpg)
+```math
+    Pixel_{out}=\frac{0+0+0+0+16+8+0+120+25}{9} 
+```
+![plot](./src/avafill.jpg)![plot](./src/avafill2.jpg)
 
 # Edge detection
 - ## Derivative No. 1 (Gradient)
