@@ -270,28 +270,44 @@ out of the picture
 - ## Derivative No. 1 (Gradient)
     Finding the Running Difference of Pixels Along a Rowand column orientation of the image.
     Row and column gradients can be calculated using 2D convolution.
-    $ G(x,y)= G_{R}(x,y)+G-{C}(x,y) $
-    ![plot](./src/G.jpg)
-    $ G_{R}(x,y) = |I(x,y)-I(x,y+1)| $ --> $ G_{R}(x,y)=|I(x,y)*H_{R}(x,y)| $
-    ![plot](./src/GR.jpg)![plot](./src/HR.jpg)
-    $ G_{C}(x,y) = |I(x,y)-I(x-1,y)| $ --> $ G_{C}(x,y)=|I(x,y)*H_{C}(x,y)|$
-    ![plot](./src/GC.jpg)![plot](./src/HC.jpg)
-    #### Example
-    on this example used Pixel Difference for mapping to new table
-    if not have value in space on windows ,you have to just instead by 0
-    $$G_{R}(1,1)=|(0*0)+(0*-1)+(0*0)+(0*0)+(16*1)+(81*0)+(0*0)+(120*0)+(255*0)| = 16$$
-    ![plot](./src/gr1.jpg)![plot](./src/gr2.jpg)
-    $$G_{C}(1,1)=|(0*0)+(0*0)+(0*0)+(0*0)+(16*1)+(81*-1)+(0*0)+(120*0)+(255*0)| = 65$$
-    ![plot](./src/gc1.jpg)![plot](./src/gc2.jpg)
-    and then combine two tables 
-    $$ G(x,y)=G_{R}(x,y)+G_{C}(x,y) $$
-    ![plot](./src/Gcombine.jpg)
+```math
+G(x,y)= G_{R}(x,y)+G-{C}(x,y) 
+```
+![plot](./src/G.jpg)
+```math
+ G_{R}(x,y) = |I(x,y)-I(x,y+1)| $ --> $ G_{R}(x,y)=|I(x,y)*H_{R}(x,y)| 
+```
+![plot](./src/GR.jpg)![plot](./src/HR.jpg)
+```math
+ G_{C}(x,y) = |I(x,y)-I(x-1,y)| $ --> $ G_{C}(x,y)=|I(x,y)*H_{C}(x,y)|
+```
+![plot](./src/GC.jpg)![plot](./src/HC.jpg)
+#### Example
+on this example used Pixel Difference for mapping to new table
+if not have value in space on windows ,you have to just instead by 0
+```math
+G_{R}(1,1)=|(0*0)+(0*-1)+(0*0)+(0*0)+(16*1)+(81*0)+(0*0)+(120*0)+(255*0)| = 16
+```
+![plot](./src/gr1.jpg)![plot](./src/gr2.jpg)
+```math
+G_{C}(1,1)=|(0*0)+(0*0)+(0*0)+(0*0)+(16*1)+(81*-1)+(0*0)+(120*0)+(255*0)| = 65
+```
+![plot](./src/gc1.jpg)![plot](./src/gc2.jpg)
+and then combine two tables 
+```math
+ G(x,y)=G_{R}(x,y)+G_{C}(x,y) 
+```
+![plot](./src/Gcombine.jpg)
 - ## Derivative No. 2  (Laplacian)
     like a Derivative No. 1 but combine Row equation and column equation
-    $G(x,y)=I(x+1,y)+I(x-1,y)+I(x,y-1)+I(x,y+1)-4I(x,y)$
-    ![plot](./src/dern2.jpg)
-    #### Example
-    Do everthing like Gradient 
-    $$G(1,1)=|(0*0)+(0*1)+(0*0)+(0*1)+(16*-4)+(81*1)+(0*0)+(120*1)+(255*0)| = 137$$
-    ![plot](./src/Gl1.jpg)![plot](./src/Gl2.jpg)
+```math
+G(x,y)=I(x+1,y)+I(x-1,y)+I(x,y-1)+I(x,y+1)-4I(x,y)
+```
+![plot](./src/dern2.jpg)
+#### Example
+Do everthing like Gradient 
+```math
+G(1,1)=|(0*0)+(0*1)+(0*0)+(0*1)+(16*-4)+(81*1)+(0*0)+(120*1)+(255*0)| = 137
+```
+![plot](./src/Gl1.jpg)![plot](./src/Gl2.jpg)
     
