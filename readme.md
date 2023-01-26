@@ -197,7 +197,7 @@ number of pixel
     Original range[84 - 153]to[0 - 255]
     ```math
      I_{new} = (I - Min)\frac{NewMax-NewMin}{Max*Min}+NewMin 
-    ````
+    ```
     #### Example
     ![plot](./src/linear.jpg)
  - ### Contrast starching
