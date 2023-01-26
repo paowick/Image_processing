@@ -120,13 +120,19 @@ $$ 512 * 512 * 8 * 3 =6,291,456 bit = 786,432 Byte = 0.786 MB $$
 
 ## Image Brightness
 average values of gray in every pixel of image 
-$$ B = brightness ={ \frac{1}{NM} \sum_{y=0}^{M-1} \sum_{y=0}^{N-1}I(x,y)} $$
+```math
+B = brightness ={ \frac{1}{NM} \sum_{y=0}^{M-1} \sum_{y=0}^{N-1}I(x,y)} 
+```
 ## Image Contrast
 The difference between the brightness and darkness of the image.
-$$ C = contrast = \sqrt{\frac{1}{NM} \sum_{y=0}^{M-1} \sum_{y=0}^{N-1} (I(x,y)-B)^2} $$
+```math
+C = contrast = \sqrt{\frac{1}{NM} \sum_{y=0}^{M-1} \sum_{y=0}^{N-1} (I(x,y)-B)^2} 
+```
 
 # Convert RGB to Grayscale
-$$ I_{Grayscale}=0.229R + 0.587G + 0.114B $$
+```math
+I_{Grayscale}=0.229R + 0.587G + 0.114B 
+```
 ![plot](./src/rgbtogray1.jpg)
 ##### Do it in every pixel!!
 ![plot](./src/rg.jpg)
