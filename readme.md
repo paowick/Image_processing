@@ -112,11 +112,20 @@ The size of the image file depends on Size and The number of bits used to repres
 ### example
 In case black and white image with 1 pixel represent by 1 bit
 
-$$ 512*512*1 = 262,144bit = 32,768Byte = 0.033MB $$
+```math
+512*512*1 = 262,144bit = 32,768Byte = 0.033MB 
+```
+
 In case gray scale with 1 pixel represent by 8 bit
-$$ 512 * 512 * 8  = 2,097,152 bit = 262,144 Byte = 0.262 MB $$
+
+```math
+ 512 * 512 * 8  = 2,097,152 bit = 262,144 Byte = 0.262 MB 
+```
 In case color image with 1 pixel represent by 8 bit and have red channel green channel and blue channel
-$$ 512 * 512 * 8 * 3 =6,291,456 bit = 786,432 Byte = 0.786 MB $$
+
+```matn
+ 512 * 512 * 8 * 3 =6,291,456 bit = 786,432 Byte = 0.786 MB 
+```
 
 ## Image Brightness
 average values of gray in every pixel of image 
