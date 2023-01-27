@@ -119,12 +119,13 @@ In case black and white image with 1 pixel represent by 1 bit
 In case gray scale with 1 pixel represent by 8 bit
 
 ```math
- 512 * 512 * 8  = 2,097,152 bit = 262,144 Byte = 0.262 MB 
+512 * 512 * 8  = 2,097,152 bit = 262,144 Byte = 0.262 MB 
 ```
+
 In case color image with 1 pixel represent by 8 bit and have red channel green channel and blue channel
 
-```matn
- 512 * 512 * 8 * 3 =6,291,456 bit = 786,432 Byte = 0.786 MB 
+```math
+512 * 512 * 8 * 3 =6,291,456 bit = 786,432 Byte = 0.786 MB 
 ```
 
 ## Image Brightness
